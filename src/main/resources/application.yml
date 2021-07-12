@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  cloud:
+    bus:
+      refresh:
+        enabled: true
+      env:
+        enabled: true
+  kafka:
+    bootstrap-servers: ${KAFKA_ADDR:http://localhost:9092}
